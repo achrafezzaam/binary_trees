@@ -1,6 +1,9 @@
 #include "binary_trees.h"
 /**
+ * binary_tree_uncle - Give the uncle node of node
+ * @node: The node to get the uncle of
  *
+ * Return: The pointer of the uncle node or NULL if it doesn't exist
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {

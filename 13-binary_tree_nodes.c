@@ -1,6 +1,9 @@
 #include "binary_trees.h"
 /**
+ * binary_tree_nodes - Give the number of nodes in a binary tree
+ * @tree: Pointer to the root node of the binary tree
  *
+ * Return: The number of nodes
  */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
@@ -8,7 +11,7 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 
 	if (tree == NULL)
 		return (0);
-	else
+	if
 	{
 		count += binary_tree_nodes(tree->left);
 		count += binary_tree_nodes(tree->right);
