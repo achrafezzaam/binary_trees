@@ -9,9 +9,7 @@ int tree_height(const binary_tree_t *tree)
 {
 	int lbranch = 0, rbranch = 0;
 
-	if (tree == NULL)
-		return (0);
-	if
+	if (tree)
 	{
 		lbranch = tree_height(tree->left);
 		rbranch = tree_height(tree->right);
@@ -21,6 +19,7 @@ int tree_height(const binary_tree_t *tree)
 		else
 			return (rbranch + 1);
 	}
+	return (0);
 }
 /**
  * binary_tree_balance - Give the balance factor of a binary tree
